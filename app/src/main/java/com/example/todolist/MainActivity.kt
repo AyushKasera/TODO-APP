@@ -1,7 +1,6 @@
 package com.example.todolist
 
 import android.content.DialogInterface
-import android.content.SharedPreferences.Editor
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Button
@@ -58,6 +57,7 @@ class MainActivity : AppCompatActivity() {
                 arrayAdapter.notifyDataSetChanged()
             }
         }
+        //add delete option
         listView.setOnItemClickListener { adapterView, view, position, l ->
             val alert=AlertDialog.Builder(this)
             alert.setTitle("Delete")
