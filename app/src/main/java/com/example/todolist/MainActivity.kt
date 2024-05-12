@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         val arrayAdapter=ArrayAdapter(this@MainActivity,android.R.layout.simple_list_item_1,android.R.id.text1,itemList)
         listView.adapter=arrayAdapter
 
-
+///
         add.setOnClickListener {
             val itemName:String=item.text.toString()
             if(itemName==""){
